@@ -50,6 +50,8 @@
       background-color: $text-color
   .stars
     flex-basis: auto
+    &-item
+    margin-right: -2px
   .hotel
     &-name
       flex-basis: 100%
@@ -65,9 +67,11 @@
         display: none
       &__offer
         order: -1
-
+        margin-left: 0
 @media (max-width: 576px)
   .container
     max-width: 280px
   .logo
     width: 99px
+  .hotel
+    padding-top: 2px
