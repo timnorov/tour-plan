@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:ital,wght@0,400;0,800;1,600&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -126,26 +127,26 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider">
+          <div class="slider hotel__slider">
             <!-- Slider main container -->
             <div class="swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img src="img/slide-1.jpg" alt="Slide">
+                  <img src="img/slide-1.jpg" class="swiper-slide__image" alt="Slide">
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide-2.jpg" alt="Slide">
+                  <img src="img/slide-2.jpg" class="swiper-slide__image" alt="Slide">
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide-3.jpg" alt="Slide">
+                  <img src="img/slide-3.jpg" class="swiper-slide__image" alt="Slide">
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide-4.jpg" alt="Slide">
+                  <img src="img/slide-4.jpg" class="swiper-slide__image" alt="Slide">
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide-5.jpg" alt="Slide">
+                  <img src="img/slide-5.jpg" class="swiper-slide__image" alt="Slide">
                 </div>
               </div>           
               <!-- If we need navigation buttons -->
@@ -178,7 +179,7 @@
               </div>
               <!-- /.booking__info -->
               <div class="booking__call-center">
-                <span class="booking_heading">Quick Booking</span>
+                <span class="booking__heading">Quick Booking</span>
                 <a href="tel:12100" class="booking__number">
                   <img src="img/phone-call.svg" alt="Icon: phone">
                   <span class="booking__num">12100</span>
@@ -188,11 +189,7 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.04121246964!2d98.29255281519318!3d7.890757407946441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1615295127296!5m2!1sru!2sru"
-                width="347" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+            <div id="map"></div>
             <!-- /.map -->
          </div>
          <!-- /.hotel-right -->
@@ -203,5 +200,7 @@
     </section>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/mapbasics.js"></script>
   </body>
 </html>
