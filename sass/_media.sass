@@ -12,6 +12,28 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(auto-fill, minmax(700px))
+    &__image
+      width: 480px
+    &-offer
+      margin-bottom: 86px
+    &-cards
+      &__offer
+        margin-bottom: 24px
+      &__label
+        position: absolute
+        padding: 8px 22px 7px 10px
+        margin-top: 26px
+        margin-left: 0px
+        background-color: $primary
+        color: $light
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 15px 
+        border-radius: 0px 4px 4px 0px
 @media (max-width: 992px)
   .container, 
   .newsletter-wrapper
@@ -80,6 +102,16 @@
     height: 255px
     &__title
       margin-bottom: 20px
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(auto-fill, minmax(250px, 2fr))
+    &__image
+      width: 350px
+    &-offer
+      margin-bottom: 35px
+    &-cards
+      &__offer
+        margin-bottom: 24px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -161,6 +193,30 @@
   .card
     width: 48%
     height: 255px
+  .packages
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 57px
+    &-wrapper
+      column-gap: 15px
+      row-gap: 15px
+    &__image
+      width: 50%
+    &-offer
+      margin-bottom: 50px
+    &-information
+      padding: 20px 18px 37px 20px
+      &__description
+        margin-bottom: 36px
+        font-size: 13px
+    &-cards
+      &__image
+        width: 100%
+      &__title
+        margin-bottom: 20px
+      &__offer
+        margin-bottom: 30px
 @media (max-width: 576px)
   .container
     max-width: 280px
@@ -228,6 +284,27 @@
       line-height: 23px
   .card
     width: 100%
+  .packages
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 36px
+    &-wrapper
+      grid-template-columns: 1fr
+      column-gap: 0px
+    &-card
+      flex-direction: column
+    &__image
+      width: 100%
+      height: 250px
+    &-cards
+      &__image
+        width: 100%
+    &-information
+      &__rating, &__description
+        display: none
+    &-offer
+      margin-bottom: 24px
 iframe
   width: 100%
   height: 100%
