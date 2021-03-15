@@ -367,12 +367,15 @@ template {
 
 .navbar-top {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 40px;
@@ -397,12 +400,15 @@ template {
   margin: 0;
   padding: 31px 0;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #FFFFFF;
@@ -422,11 +428,13 @@ template {
 
 .search {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
   height: 40px;
 }
 
@@ -443,6 +451,10 @@ template {
 }
 
 .search__input::-webkit-input-placeholder {
+  color: #333333;
+}
+
+.search__input::-moz-placeholder {
   color: #333333;
 }
 
@@ -471,9 +483,11 @@ template {
 
 .user {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
@@ -482,7 +496,8 @@ template {
 .user__avatar {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -496,9 +511,11 @@ template {
 
 .breadcrumb-list {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 17px 0;
@@ -528,12 +545,15 @@ template {
 
 .hotel-info {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 20px;
@@ -561,11 +581,14 @@ template {
 
 .hotel-wrapper {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -577,22 +600,27 @@ template {
 
 .hotel-grid {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .hotel-right {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -608,7 +636,8 @@ template {
   width: 100%;
   height: 100%;
   position: relative;
-  border-radius: 8px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
   overflow: hidden;
 }
 
@@ -622,6 +651,8 @@ template {
   left: 0;
   right: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: -webkit-linear-gradient(top, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  background: -o-linear-gradient(top, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   z-index: 10;
 }
@@ -630,6 +661,7 @@ template {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 99;
   width: 30px;
@@ -638,7 +670,8 @@ template {
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 10px;
+  -webkit-background-size: 10px 10px;
+          background-size: 10px;
   background-color: transparent;
 }
 
@@ -653,8 +686,9 @@ template {
 }
 
 .stars {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
   margin-top: -6px;
 }
 
@@ -667,7 +701,8 @@ template {
   line-height: 13px;
   padding: 4px 9px;
   background-color: #EC1F46;
-  border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
   color: #FFFFFF;
 }
 
@@ -677,7 +712,8 @@ template {
   text-align: center;
   color: #FFFFFF;
   background-color: #EC1F46;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
 }
 
 .rating__text {
@@ -697,7 +733,8 @@ template {
 .booking {
   background-color: #0A223D;
   color: #FFFFFF;
-  border-radius: 8px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
   width: 350px;
   min-height: 210px;
   padding: 28px;
@@ -705,9 +742,11 @@ template {
 
 .booking__info {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 9px;
@@ -715,10 +754,12 @@ template {
 
 .booking__price {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
@@ -751,12 +792,15 @@ template {
 
 .booking__text {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 8px;
@@ -773,12 +817,15 @@ template {
 
 .booking__call-center {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 17px;
@@ -794,12 +841,15 @@ template {
 
 .booking__number {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: inherit;
@@ -823,7 +873,8 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
   background-color: #EC1F46;
   border: none;
   color: #FFFFFF;
@@ -833,7 +884,8 @@ template {
 .map {
   width: 347px;
   height: 213px;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   overflow: hidden;
 }
 
@@ -872,9 +924,11 @@ iframe {
   width: 100%;
   height: 500px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 8px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
   overflow: hidden;
   -ms-grid-column: span 2;
       grid-column-start: span 2;
@@ -897,7 +951,8 @@ iframe {
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
-  border-radius: 0px 4px 4px 0px;
+  -webkit-border-radius: 0px 4px 4px 0px;
+          border-radius: 0px 4px 4px 0px;
 }
 
 .packages-information {
@@ -958,12 +1013,15 @@ iframe {
 
 .packages-lastcall {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -986,7 +1044,8 @@ iframe {
   line-height: 19px;
   cursor: pointer;
   border: none;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
 }
 
 .packages-cards {
@@ -1054,12 +1113,15 @@ iframe {
 .newsletter-wrapper {
   position: relative;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 731px;
@@ -1085,7 +1147,8 @@ iframe {
   position: relative;
   width: 350px;
   height: 55px;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
   overflow: hidden;
 }
 
@@ -1133,19 +1196,23 @@ iframe {
 .reviews-slider__item {
   position: relative;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   max-width: 730px;
   margin: 45px auto 0;
   background-color: #fff;
-  border-radius: 8px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
   padding: 0 62px 30px;
 }
 
@@ -1175,11 +1242,13 @@ iframe {
   position: absolute;
   top: 47%;
   -webkit-transform: translateY(-96%);
+      -ms-transform: translateY(-96%);
           transform: translateY(-96%);
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
-  background-size: 10px;
+  -webkit-background-size: 10px 10px;
+          background-size: 10px;
   background-position: center;
   border: none;
   background-color: transparent;
@@ -1201,13 +1270,16 @@ iframe {
 
 .reviews-slider__profile {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
@@ -1217,7 +1289,8 @@ iframe {
 .reviews-slider__avatar {
   width: 90px;
   height: 90px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: -3px;
@@ -1242,9 +1315,11 @@ iframe {
 
 .reviews-slider__rating {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -1280,9 +1355,11 @@ iframe {
 
 .activities-wrapper {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -1290,19 +1367,23 @@ iframe {
 .card {
   position: relative;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 24px 26px;
   width: 255px;
   height: 255px;
-  border-radius: 6px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
   overflow: hidden;
 }
 
@@ -1313,6 +1394,8 @@ iframe {
   right: 0;
   bottom: 0;
   left: 0;
+  background: -webkit-linear-gradient(270.17deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  background: -o-linear-gradient(270.17deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
   background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
   z-index: -1;
 }
@@ -1350,8 +1433,209 @@ iframe {
   padding: 7px 22px;
   border: none;
   background-color: #EC1F46;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
   cursor: pointer;
+}
+
+.footer {
+  background-color: #0A223D;
+  color: #FFFFFF;
+  padding-top: 108px;
+  padding-bottom: 46px;
+}
+
+.footer-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(min-content, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  grid-gap: 20px;
+  grid-auto-rows: minmax(40px, -webkit-min-content);
+  grid-auto-rows: minmax(40px, min-content);
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.footer__logo {
+  width: 166px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+              -ms-grid-row-align: stretch;
+          align-self: stretch;
+}
+
+.footer__categories {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+}
+
+.footer__social-links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 83px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__social-network {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  grid-column: span 2;
+}
+
+.footer__contact-details {
+  grid-column: span 2;
+}
+
+.footer__contact-form {
+  grid-column: span 2;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.footer__ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 16 0;
+  text-transform: uppercase;
+}
+
+.footer__title-inline {
+  margin: 0 43px 0 0;
+}
+
+.footer__title--mb-3 {
+  margin-bottom: 30px;
+}
+
+.footer__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
+}
+
+.footer__item--mb-2 {
+  margin-bottom: 20px;
+}
+
+.footer__icon-wrapper {
+  min-width: 40px;
+}
+
+.footer__text {
+  color: #BDBDBD;
+  margin-bottom: 22px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__input {
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+  margin-bottom: 15px;
+  -webkit-flex-basis: 48%;
+      -ms-flex-preferred-size: 48%;
+          flex-basis: 48%;
+}
+
+.footer__message {
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+  padding: 18px 23px;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  margin-bottom: 23px;
+}
+
+.footer__button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  background-color: #EC1F46;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+}
+
+.footer__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 
 @media (max-width: 1200px) {
@@ -1394,7 +1678,8 @@ iframe {
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
-    border-radius: 0px 4px 4px 0px;
+    -webkit-border-radius: 0px 4px 4px 0px;
+            border-radius: 0px 4px 4px 0px;
   }
 }
 
@@ -1436,6 +1721,7 @@ iframe {
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1445,6 +1731,7 @@ iframe {
   .hotel-right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
   }
@@ -1484,8 +1771,9 @@ iframe {
     padding-top: 30px;
   }
   .activities-wrapper {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
   .activities__card {
     margin-bottom: 20px;
@@ -1524,19 +1812,23 @@ iframe {
   }
   .menu-button {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 16px;
     height: 11px;
     padding: 0;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
@@ -1549,8 +1841,9 @@ iframe {
     background-color: #333333;
   }
   .stars {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    -webkit-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
   }
   .stars__item-main {
     margin-right: -2px;
@@ -1559,11 +1852,13 @@ iframe {
     padding-bottom: 40px;
   }
   .hotel-name {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
   }
   .hotel-wrapper {
     -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
@@ -1579,6 +1874,7 @@ iframe {
   }
   .hotel-info__offer {
     -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
         -ms-flex-order: -1;
             order: -1;
     margin-left: 0;
@@ -1586,6 +1882,7 @@ iframe {
   .hotel-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: 450px;
@@ -1603,10 +1900,12 @@ iframe {
     max-width: 576px;
     width: 92%;
     -webkit-box-align: start;
+    -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1622,12 +1921,14 @@ iframe {
   .reviews-slider__button--prev {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     margin-left: -65px;
   }
   .reviews-slider__button--next {
     right: 50%;
     -webkit-transform: translate(50%, 0);
+        -ms-transform: translate(50%, 0);
             transform: translate(50%, 0);
     margin-right: -65px;
   }
@@ -1710,7 +2011,8 @@ iframe {
     height: 179px;
   }
   .hotel-slider__button {
-    background-size: 4px;
+    -webkit-background-size: 4px 4px;
+            background-size: 4px;
   }
   .hotel-slider__button--next {
     right: -3px;
@@ -1786,6 +2088,7 @@ iframe {
   .packages-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-grid-column: span 1;
@@ -1814,4 +2117,3 @@ iframe {
   height: 100%;
   border: 0;
 }
-/*# sourceMappingURL=style.css.map */
