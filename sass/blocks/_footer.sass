@@ -41,11 +41,6 @@
       grid-column: span 2
       margin-left: 1px
       margin-bottom: 25px
-  &__form
-    display: flex
-    align-items: center
-    justify-content: space-between
-    flex-wrap: wrap
   &__ul
     padding: 0
     margin: 0
@@ -89,11 +84,6 @@
     text-decoration: none
     color: $footer-text-color
   &__input
-    background-color: #fff
-    border-radius: 4px
-    border: none
-    padding: 0 27px
-    height: 50px
     margin-bottom: 15px
     flex-basis: 47%
     &::placeholder
@@ -103,11 +93,6 @@
       line-height: 15px
       color: #BDBDBD
   &__message
-    height: 123px
-    background-color: #fff
-    border-radius: 4px
-    border: none
-    padding: 18px 23px
     flex-basis: 100%
     margin-bottom: 23px
     resize: none
@@ -117,18 +102,6 @@
       font-size: 12px
       line-height: 15px
       color: #BDBDBD
-  &__button
-    min-width: 160px
-    min-height: 50px
-    padding: 18px
-    font-style: normal
-    font-weight: bold
-    font-size: 12px
-    line-height: 15px
-    color: $light
-    background-color: $primary
-    border-radius: 4px
-    border: none
   &__info
     font-style: normal
     font-weight: bold
@@ -138,22 +111,22 @@
     &--hidden
       display: none
   &__rights
-      grid-column: 2/4
-      grid-row: 6
-      min-width: 283px
-      margin: auto
-      &--ul
-        display: flex
-        justify-content: space-between
-        font-style: normal
-        font-weight: normal
-        font-size: 12px
-        line-height: 15px
+    grid-column: 2/4
+    grid-row: 6
+    min-width: 283px
+    margin: auto
+  &__points
+    display: flex
+    justify-content: space-between
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
   &__payment
     grid-column: 4
     grid-row: 6
     &-options
       width: 136px
       margin-left: 125px
-
-      
+.logo-bottom
+  grid-row: 1/3
