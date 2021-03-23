@@ -11,12 +11,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/hamburgers.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
-        <div class="navbar-top">
+        <div class="navbar-top" data-aos="fade-up">
           <a href="index.html" class="logo">
             <img
               src="img/horizontal-logo.svg"
@@ -48,10 +50,12 @@
             <span class="user__name">Nathan</span>
           </a>
           <!-- /.user -->
-          <button class="menu-button navbar-top__menu-button">
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
+          <button
+            class="menu-button navbar-top__menu-button hamburger hamburger--vortex"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
           </button>
         </div>
         <!-- /.navbar-top -->
@@ -591,10 +595,10 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="subscribe newsletter__subscribe form"
         >
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             required
             placeholder="Your email address"
@@ -703,7 +707,7 @@
               class="card__image"
             />
             <h3 class="card__title">The curious corner<br />of chamarel</h3>
-            <button class="card__button">Book now</button>
+            <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -713,7 +717,7 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf<br />course</h3>
-            <button class="card__button">Book now</button>
+            <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -725,7 +729,7 @@
             <h3 class="card__title">
               Tamarind falls hiking<br />trip - full day
             </h3>
-            <button class="card__button">Book now</button>
+            <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -735,7 +739,7 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery<br />quest</h3>
-            <button class="card__button">Book now</button>
+            <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
         </div>
@@ -876,10 +880,16 @@
                     class="footer__icon"
                   />
                 </div>
-                Tel (business hours) : 269 1500<br />
-                Tel (hotline) Monday - Saturday: 52&#8209;56-61-38 (08:00 am –
-                20:00 pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br />
+                <div class="footer__contacts-wrapper">
+                  Tel (business hours) :
+                  <a href="tel:2691500">269 1500</a><br />
+                  Tel (hotline) Monday - Saturday:
+                  <a href="tel:52566138">52&#8209;56-61-38</a> (08:00 am – 20:00
+                  pm)<br />
+                  Tel (hotline) Sunday:
+                  <a href="tel:52566138">52&#8209;56-61-38</a> (08:00 am – 14:00
+                  pm)<br />
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -889,7 +899,9 @@
                     class="footer__icon"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:example@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -899,23 +911,28 @@
               Send us a message
             </h3>
             <form action="send.php" method="POST" class="form footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                required
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                required
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  required
+                  placeholder="Your Full Name*"
+                  name="name"
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__group">
+                <input
+                  type="tel"
+                  class="input footer__input phone"
+                  required
+                  placeholder="Phone Number*"
+                  name="phone"
+                  minlength="18"
+                />
+              </div>
               <textarea
                 class="message footer__message"
-                required
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -957,33 +974,41 @@
           Booking
         </h3>
         <form action="#" method="POST" class="form modal__form">
-          <input
-            type="text"
-            class="input modal__input"
-            required
-            placeholder="Your Full Name*"
-            name="name"
-          />
-          <input
-            type="text"
-            class="input modal__input"
-            required
-            placeholder="Phone Number*"
-            name="phone"
-          />
-          <input
-            type="text"
-            class="input modal__input"
-            required
-            placeholder="Email*"
-            name="email"
-          />
+          <div class="modal__group">
+            <input
+              type="text"
+              class="input modal__input"
+              required
+              placeholder="Your Full Name*"
+              name="name"
+              minlength="2"
+            />
+          </div>
+          <div class="modal__group">
+            <input
+              type="tel"
+              class="input modal__input phone"
+              required
+              placeholder="Phone Number*"
+              name="phone"
+              minlength="18"
+            />
+          </div>
+          <div class="modal__group">
+            <input
+              type="email"
+              class="input modal__input modal__input--email"
+              required
+              placeholder="Email*"
+              name="email"
+            />
+          </div>
           <textarea
-            class="message modal__message"
-            required
+            class="modal__message"
             placeholder="Message"
             name="message"
           ></textarea>
+          <span class="modal__info modal__info--hidden">* Required Fields</span>
           <button class="button modal__button">Send</button>
           <span class="modal__info">* Required Fields</span>
         </form>
@@ -993,8 +1018,11 @@
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/parallax.js"></script>
   </body>
 </html>

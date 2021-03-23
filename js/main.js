@@ -50,6 +50,7 @@ menuButton.on('click', function() {
     modalOverlay.removeClass("modal__overlay--visible")
     modalDialog.removeClass("modal__dialog--visible")
    }
+});
 
    $(document).keydown(function(e) { 
     if (e.keyCode === 27) { 
@@ -57,4 +58,36 @@ menuButton.on('click', function() {
         $("#modal__dialog").removeClass("modal__dialog--visible");
     } 
 });
+
+
+$(".form").each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+    messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "Name should be at least 2 letters long",
+    },
+    email: {
+      required: "Please specify your email",
+      minlength: "Please use format of name@domain.com",
+    },
+    phone: {
+      required: "Please specify your phone",
+      minlength: "Please enter the full number",
+    },
+    message: "Please write down your message",
+  },
+  });
+  AOS.init();
 });
+
+$(document).ready(function(){
+  $(".phone").mask("+7 (999) 999-99-99");
+});
+
+var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    // Do something else, like open/close menu
+  });
