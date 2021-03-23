@@ -79,7 +79,9 @@ $(".form").each(function() {
     message: "Please write down your message",
   },
   });
-  AOS.init();
+  AOS.init({
+    disable: 'mobile',
+  });
 });
 
 $(document).ready(function(){

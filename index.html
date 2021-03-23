@@ -18,8 +18,8 @@
   <body>
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
-        <div class="navbar-top" data-aos="fade-up">
-          <a href="index.html" class="logo">
+        <div class="navbar-top">
+          <a href="index.html" class="logo" data-aos="fade-right">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -28,6 +28,7 @@
           </a>
 
           <form
+            data-aos="fade-up"
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
           >
@@ -41,7 +42,11 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-left"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -278,7 +283,7 @@
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages-wrapper">
-          <div class="packages-card">
+          <div class="packages-card" data-aos="fade-up">
             <img
               src="img/package-1.jpg"
               alt="Photo: Hotel Blue Haven"
@@ -356,7 +361,7 @@
               </div>
             </div>
           </div>
-          <div class="packages-card packages-cards">
+          <div class="packages-card packages-cards" data-aos="fade-up">
             <span class="packages__label packages-cards__label"
               >Flash Offer</span
             >
@@ -411,7 +416,7 @@
               </div>
             </div>
           </div>
-          <div class="packages-card packages-cards">
+          <div class="packages-card packages-cards" data-aos="fade-up">
             <span class="packages__label packages-cards__label"
               >Flash Offer</span
             >
@@ -466,7 +471,7 @@
               </div>
             </div>
           </div>
-          <div class="packages-card packages-cards">
+          <div class="packages-card packages-cards" data-aos="fade-up">
             <span class="packages__label packages-cards__label"
               >Flash Offer</span
             >
@@ -521,7 +526,7 @@
               </div>
             </div>
           </div>
-          <div class="packages-card packages-cards">
+          <div class="packages-card packages-cards" data-aos="fade-up">
             <span class="packages__label packages-cards__label"
               >Flash Offer</span
             >
@@ -588,11 +593,12 @@
       data-image-src="img/newsletter-bg.jpg"
     >
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2 class="newsletter-title newsletter__title" data-aos="fade-right">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form
+          data-aos="fade-left"
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe form"
@@ -700,7 +706,11 @@
         <h2 class="activities__title">Other activities</h2>
         <!-- /.activities-title -->
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -710,7 +720,11 @@
             <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -720,7 +734,11 @@
             <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -732,7 +750,11 @@
             <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -994,7 +1016,7 @@
               minlength="18"
             />
           </div>
-          <div class="modal__group">
+          <div class="modal__group modal__group--email">
             <input
               type="email"
               class="input modal__input modal__input--email"

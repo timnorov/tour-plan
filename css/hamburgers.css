@@ -15,11 +15,11 @@
   transition-property: opacity, filter;
   transition-property: opacity, filter, -webkit-filter;
   -webkit-transition-duration: 0.15s;
-  -o-transition-duration: 0.15s;
-  transition-duration: 0.15s;
+       -o-transition-duration: 0.15s;
+          transition-duration: 0.15s;
   -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
   font: inherit;
   color: inherit;
   text-transform: none;
@@ -56,14 +56,12 @@
   margin-top: -0.5px;
 }
 
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 16px;
   height: 1px;
   background-color: #000;
   -webkit-border-radius: 0px;
-  border-radius: 0px;
+          border-radius: 0px;
   position: absolute;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
@@ -71,15 +69,14 @@
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 0.15s;
-  -o-transition-duration: 0.15s;
-  transition-duration: 0.15s;
+       -o-transition-duration: 0.15s;
+          transition-duration: 0.15s;
   -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
-.hamburger-inner::before,
-.hamburger-inner::after {
+.hamburger-inner::before, .hamburger-inner::after {
   content: "";
   display: block;
 }
@@ -97,24 +94,23 @@
    */
 .hamburger--vortex .hamburger-inner {
   -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
   -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+       -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.hamburger--vortex .hamburger-inner::before,
-.hamburger--vortex .hamburger-inner::after {
+.hamburger--vortex .hamburger-inner::before, .hamburger--vortex .hamburger-inner::after {
   -webkit-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
   -webkit-transition-delay: 0.1s;
-  -o-transition-delay: 0.1s;
-  transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
   -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .hamburger--vortex .hamburger-inner::before {
@@ -133,18 +129,17 @@
 
 .hamburger--vortex.is-active .hamburger-inner {
   -webkit-transform: rotate(765deg);
-  -ms-transform: rotate(765deg);
-  transform: rotate(765deg);
+      -ms-transform: rotate(765deg);
+          transform: rotate(765deg);
   -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+       -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.hamburger--vortex.is-active .hamburger-inner::before,
-.hamburger--vortex.is-active .hamburger-inner::after {
+.hamburger--vortex.is-active .hamburger-inner::before, .hamburger--vortex.is-active .hamburger-inner::after {
   -webkit-transition-delay: 0s;
-  -o-transition-delay: 0s;
-  transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 .hamburger--vortex.is-active .hamburger-inner::before {
@@ -155,6 +150,6 @@
 .hamburger--vortex.is-active .hamburger-inner::after {
   bottom: 0;
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
